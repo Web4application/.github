@@ -1,5 +1,5 @@
 <br /><br /><br /><br />
-<img src="https://brand.web4.dev/web4/header/dark.svg">
+<img src="https://brand.web4.dev/web4/header/light.svg">
 <br /><br /><br /><br />
 
 ```html
