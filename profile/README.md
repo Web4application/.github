@@ -5,140 +5,118 @@
 </picture>
 <br /><br /><br /><br />
 
-```html
-<!-- MyButton.html -->
-
-<script lang="C#">
-    // 🚨🚨🚨 ⬆︎ HTML support for ANY language! 🚨🚨🚨
-    void OnClick(Event e)
-    {
-        c++;
-    }
-</script>
-
-<button onclick={e => OnClick(e)}>
-    Clicks:  {c}
-    <!--🚨🚨🚨 ⬆︎ HTML support for reactivity – no framework! 🚨🚨🚨-->
-</button>
-
-<!--
-  Compile your HTML
-    • to a native binary for multiplayer-reactivity + zero-cost dependencies  (mutates the DOM from a WebSocket)
-    • to a WASM binary for offline-reactivity + static hosting                (mutates the DOM from WebAssembly)
--->
-```
-
 About
 -----
 
 The Web4 Foundation is a nonprofit organization dedicated to the advancement of the open web through its fourth chapter: local-first, native webapps. The foundation is currently being organized as a 501(c)(6). Formal status is in progress.  Similar to organizations like W3C and WHATWG, the Web4 Foundation also stewards, defines, and extends the standards of the open web. However, since Web4 executes extramurally instead of inside the browser, its scope of influence is not targeted towards browser vendors but rather towards language communities. Web4’s directive is to support the consistent implementation of these standards across all language communities to maximize skill-portability and minimize framework-fatigue.
+<br /><br /><br /><br />
 
 Repos
 -----
 
-This GitHub org is organized to be an ecosystem of ecosystems.  Each repo fits into one of three categories.
-1) **SDKs**<br />Each language community can build independently without the burden of conflicting conventions and idioms.
-2) **Specs**<br />Contains no implementation code.  Used as a common area for cross-language discussions, issues, benchmarks, documentation, and specifications.  
-3) **Tools**<br />Usually only implemented in one language – whichever is the best tool for the job.
+> [!IMPORTANT]
+> ⚠️ The Web4 Foundation is an ecosystem of ecosystems.  As such it offers SDKs in a multitude of languages each in their own separate GitHub repository.  Some repos, like [XTML](https://github.com/web4foundation/xtml), contain zero implementation code and instead serve as a common area for cross-language discussions, issues, specifications, benchmarks amd documentation. 
+
+<a href="https://github.com/web4foundation/xtml">
+    <picture>
+        <source srcset="https://brand.web4.dev/xtml/header/dark.svg" media="(prefers-color-scheme: dark)">
+        <img src="https://brand.web4.dev/xtml/header/light.svg">
+    </picture>
+</a>
+
+```html
+<!-- MyButton.html -->
+
+<button onclick={e => OnClick(e)}>
+  Clicks: {c} <!-- ⬅︎ HTML can "react" natively, no framework! 🚨 -->
+</button>
+
+<script lang="C#"> // ⬅︎ script tags in ANY language! 🚨
+  void OnClick(Event e)
+  {
+    c++;
+    Console.Log("Hello from C#");
+  }
+</script>
+```
+<br />
 
 ### SDKs
-
-<a href="https://github.com/web4foundation/web4-dotnet">
-    <picture>
-        <source srcset="https://brand.web4.dev/sdks/dotnet/dark/love.svg" media="(prefers-color-scheme: dark)">
-        <img src="https://brand.web4.dev/sdks/dotnet/light/love.svg" style="width: 300px">
-    </picture>
-</a>
-&nbsp;&nbsp;&nbsp;(reference implementation)
-<br /><br />
-<a href="https://github.com/web4foundation/web4-java">
-    <picture>
-        <source srcset="https://brand.web4.dev/sdks/java/dark/love.svg" media="(prefers-color-scheme: dark)">
-        <img src="https://brand.web4.dev/sdks/java/light/love.svg" style="width: 300px">
-    </picture>
-</a>
-<br /><br />
-<a href="https://github.com/web4foundation/web4-go">
-    <picture>
-        <source srcset="https://brand.web4.dev/sdks/go/dark/love.svg" media="(prefers-color-scheme: dark)">
-        <img src="https://brand.web4.dev/sdks/go/light/love.svg" style="width: 300px">
-    </picture>
-</a>
-<br /><br />
-<a href="https://github.com/web4foundation/web4-kotlin">
-    <picture>
-        <source srcset="https://brand.web4.dev/sdks/kotlin/dark/love.svg" media="(prefers-color-scheme: dark)">
-        <img src="https://brand.web4.dev/sdks/kotlin/light/love.svg" style="width: 300px">
-    </picture>
-</a>
-<br /><br />
-<a href="https://github.com/web4foundation/web4-swift">
-    <picture>
-        <source srcset="https://brand.web4.dev/sdks/swift/dark/love.svg" media="(prefers-color-scheme: dark)">
-        <img src="https://brand.web4.dev/sdks/swift/light/love.svg" style="width: 300px">
-    </picture>
-</a>
-<br /><br />
-<a href="https://github.com/web4foundation/web4-javascript">
-    <picture>
-        <source srcset="https://brand.web4.dev/sdks/javascript/dark/love.svg" media="(prefers-color-scheme: dark)">
-        <img src="https://brand.web4.dev/sdks/javascript/light/love.svg" style="width: 300px">
-    </picture>
-</a>
-<br /><br />
-<a href="https://github.com/web4foundation/web4-ruby">
-    <picture>
-        <source srcset="https://brand.web4.dev/sdks/ruby/dark/love.svg" media="(prefers-color-scheme: dark)">
-        <img src="https://brand.web4.dev/sdks/ruby/light/love.svg" style="width: 300px">
-    </picture>
-</a>
-<br /><br />
-<a href="https://github.com/web4foundation/web4-python">
-    <picture>
-        <source srcset="https://brand.web4.dev/sdks/python/dark/love.svg" media="(prefers-color-scheme: dark)">
-        <img src="https://brand.web4.dev/sdks/python/light/love.svg" style="width: 300px">
-    </picture>
-</a>
-
-### Specs
 
 <table>
     <tr>
         <td>
-            <a href="https://github.com/web4foundation/xtml">
+            <a href="https://github.com/web4foundation/web4-dotnet">
                 <picture>
-                    <source srcset="https://brand.web4.dev/xtml/logo/dark.svg" media="(prefers-color-scheme: dark)">
-                    <img src="https://brand.web4.dev/xtml/logo/light.svg" style="width: 92px">
+                    <source srcset="https://brand.web4.dev/sdks/dotnet/dark/love.svg" media="(prefers-color-scheme: dark)">
+                    <img src="https://brand.web4.dev/sdks/dotnet/light/love.svg" style="max-width: 256px; margin: 8px">
                 </picture>
             </a>
-            <p>
-                eXtramural Templating Markup Language – a hopeful W3C candidate recommendation for HTML6
-            </p>
         </td>
         <td>
-            <a href="https://github.com/web4foundation/keyholes">
+            <a href="https://github.com/web4foundation/web4-kotlin">
                 <picture>
-                    <source srcset="https://brand.web4.dev/keyholes/logo/dark.svg" media="(prefers-color-scheme: dark)">
-                    <img src="https://brand.web4.dev/keyholes/logo/light.svg" style="width: 92px">
+                    <source srcset="https://brand.web4.dev/sdks/kotlin/dark/love.svg" media="(prefers-color-scheme: dark)">
+                    <img src="https://brand.web4.dev/sdks/kotlin/light/love.svg" style="max-width: 256px; margin: 8px">
                 </picture>
             </a>
-            <p>
-                A common abstraction for bridging into the DOM from WebAssembly or WebSockets
-            </p>
         </td>
         <td>
-            <a href="https://github.com/web4foundation/html-bench">
+            <a href="https://github.com/web4foundation/web4-javascript">
                 <picture>
-                    <source srcset="https://brand.web4.dev/html-bench/logo/dark.svg" media="(prefers-color-scheme: dark)">
-                    <img src="https://brand.web4.dev/html-bench/logo/light.svg" style="width: 92px">
+                    <source srcset="https://brand.web4.dev/sdks/javascript/dark/love.svg" media="(prefers-color-scheme: dark)">
+                    <img src="https://brand.web4.dev/sdks/javascript/light/love.svg" style="max-width: 256px; margin: 8px">
                 </picture>
             </a>
-            <p>
-                A neutral testing ground for languages to compare their approaches for server-side rendering and reconciliation
-            </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://github.com/web4foundation/web4-go">
+                <picture>
+                    <source srcset="https://brand.web4.dev/sdks/go/dark/love.svg" media="(prefers-color-scheme: dark)">
+                    <img src="https://brand.web4.dev/sdks/go/light/love.svg" style="max-width: 256px; margin: 8px">
+                </picture>
+            </a>
+        </td>
+        <td>
+            <a href="https://github.com/web4foundation/web4-swift">
+                <picture>
+                    <source srcset="https://brand.web4.dev/sdks/swift/dark/love.svg" media="(prefers-color-scheme: dark)">
+                    <img src="https://brand.web4.dev/sdks/swift/light/love.svg" style="max-width: 256px; margin: 8px">
+                </picture>
+            </a>
+        </td>
+        <td>
+            <a href="https://github.com/web4foundation/web4-python">
+                <picture>
+                    <source srcset="https://brand.web4.dev/sdks/python/dark/love.svg" media="(prefers-color-scheme: dark)">
+                    <img src="https://brand.web4.dev/sdks/python/light/love.svg" style="max-width: 256px; margin: 8px">
+                </picture>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://github.com/web4foundation/web4-java">
+                <picture>
+                    <source srcset="https://brand.web4.dev/sdks/java/dark/love.svg" media="(prefers-color-scheme: dark)">
+                    <img src="https://brand.web4.dev/sdks/java/light/love.svg" style="max-width: 256px; margin: 8px">
+                </picture>
+            </a>
+        </td>
+        <td></td>        
+        <td>
+            <a href="https://github.com/web4foundation/web4-ruby">
+                <picture>
+                    <source srcset="https://brand.web4.dev/sdks/ruby/dark/love.svg" media="(prefers-color-scheme: dark)">
+                    <img src="https://brand.web4.dev/sdks/ruby/light/love.svg" style="max-width: 256px; margin: 8px">
+                </picture>
+            </a>
         </td>
     </tr>
 </table>
+<br />
 
 ### Tools
 
@@ -148,37 +126,74 @@ This GitHub org is organized to be an ecosystem of ecosystems.  Each repo fits i
             <a href="https://github.com/web4foundation/restful2">
                 <picture>
                     <source srcset="https://brand.web4.dev/restful2/logo/dark.svg" media="(prefers-color-scheme: dark)">
-                    <img src="https://brand.web4.dev/restful2/logo/light.svg" style="height: 48px; min-width: 150px">
+                    <img src="https://brand.web4.dev/restful2/logo/light.svg" style="height: 96px">
                 </picture>
             </a>
-            <p>
-                RESTful APIs over WebSockets instead of HTTP<br /><code>fetch()</code> → <code>listen()</code>
-            </p>
         </td>
+        <td>
+            RESTful APIs over WebSockets instead of HTTP<br /><code>fetch()</code> → <code>listen()</code>
+        </td>
+    </tr>
+    <tr>
         <td>
             <a href="https://github.com/web4foundation/syncql">
                 <picture>
                     <source srcset="https://brand.web4.dev/syncql/logo/dark.svg" media="(prefers-color-scheme: dark)">
-                    <img src="https://brand.web4.dev/syncql/logo/light.svg" style="height: 48px; min-width: 150px">
+                    <img src="https://brand.web4.dev/syncql/logo/light.svg" style="height: 96px">
                 </picture>
             </a>
-            <p>
-                Operates similar to PgBouncer but enhances a subset of SQL for real-time query listeners and offline mode
-            </p>
         </td>
+        <td>
+            Operates similar to PgBouncer but enhances a subset of SQL for real-time query listeners and offline mode
+        </td>
+    </tr>
+    <tr>
         <td>
             <a href="https://github.com/web4foundation/system-ui">
                 <picture>
                     <source srcset="https://brand.web4.dev/system-ui/logo/dark.svg" media="(prefers-color-scheme: dark)">
-                    <img src="https://brand.web4.dev/system-ui/logo/light.svg" style="height: 48px; min-width: 150px">
+                    <img src="https://brand.web4.dev/system-ui/logo/light.svg" style="height: 96px">
                 </picture>
             </a>
-            <p>
-                A component library that mimics the look-and-feel of its surrounding OS – one app, multiple design systems
-            </p>
+        </td>
+        <td>
+            A component library that mimics the look-and-feel of its surrounding OS – one app, multiple design systems
         </td>
     </tr>
 </table>
+<br />
+
+### Specs & Benchmarks
+
+<table>
+    <tr>
+        <td>
+            <a href="https://github.com/web4foundation/keyholes">
+                <picture>
+                    <source srcset="https://brand.web4.dev/keyholes/logo/dark.svg" media="(prefers-color-scheme: dark)">
+                    <img src="https://brand.web4.dev/keyholes/logo/light.svg" style="width: 150px">
+                </picture>
+            </a>
+        </td>
+        <td>
+            Keyholes are the doorway to HTML-based reactivity using any language by bridging into the DOM from WebAssembly or WebSockets
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://github.com/web4foundation/html-bench">
+                <picture>
+                    <source srcset="https://brand.web4.dev/html-bench/logo/dark.svg" media="(prefers-color-scheme: dark)">
+                    <img src="https://brand.web4.dev/html-bench/logo/light.svg" style="width: 150px">
+                </picture>
+            </a>
+        </td>
+        <td>
+            A neutral testing ground for languages to compare their approaches for server-side rendering and reconciliation
+        </td>
+    </tr>
+</table>
+<br />
 
 Why Web4?
 ---------
@@ -188,7 +203,7 @@ The story of the web is written in chapters not generations.  Generations replac
 | Chapter | Computing Paradigm | What it Enabled | Execution Location | Categories Unlocked |
 |---|---|---|---|---|
 | Web1 | Personal Computing | Static documents | Server-side | Long-form content<br /><sub>academic papers, news, blogs, marketing sites, etc</sub> |
-| Web2 | Cloud Computing | Dynamic webpages | Client-side | Short-form content<br /><sub>social media, e-commerce, etc</sub> |
+| Web2 | Cloud Computing | Dynamic webpages | Client-side | Short-form content<br /><sub>e-commerce, social media, etc</sub> |
 | Web3 | Decentralized Computing | Smart contracts | Peer-to-peer | Transactional content<br /><sub>DeFi, digital ownership, etc</sub> |
 | Web4 | Edge Computing | Local-first apps | Edge-side / WASM | Function over content<br /><sub>utilities, games, collaborative, productivity, etc</sub> |
 
