@@ -207,11 +207,11 @@ The story of the web is written in chapters not generations.  Generations replac
 | Web3 | Decentralized Computing | Smart contracts | Peer-to-peer | Transactional content<br /><sub>DeFi, digital ownership, etc</sub> |
 | Web4 | Edge Computing | Local-first apps | Edge-side / WASM | Function over content<br /><sub>utilities, games, collaborative, productivity, etc</sub> |
 
-Infrastructure for Edge Computing has reached an interesting tipping point recently where, thanks to geo-various datacenter build-outs, long-haul fiber installations, and even 5G rollouts, ubiquitous low latency has been achieved globally.  In a world where it’s possible to roundtrip to an edge server with lower latency than your screen’s own refresh rate, suddenly it makes sense to move a whole class of workloads off the client.  The architecture of these new edge-native opportunities are neither server-side, nor client-side, they are middle-out and must be local-first.
+There's been an interesting tipping point in edge computing recently where, ubiquitous low latency has been achieved globally thanks to geo-various datacenter build-outs, long-haul fiber installations, and even 5G rollouts.  In a world where it’s possible to roundtrip to an edge server with lower latency than your screen’s own refresh rate, suddenly it makes sense to move a whole class of workloads off the client.  The architecture of these new edge-native opportunities are neither server-side, nor client-side, they are middle-out and must be local-first.
 
-### A New Species: Local-First Apps (LFA)
+### Local-First Apps (LFA)
 
-Local-first applications (LFA) emphasize function over content.  Typical categories include utilities, games, collaborative software, and productivity tools (categories far more prevalent in native app stores).  In this species, the concept of a “page” is eliminated entirely and URLs are used, not as locations of resources, but as bookmarks for state.  Local-first apps (LFA) differ from single-page apps (SPA) in a few fundamental areas:
+Web4 introduces a new species of apps, local-first applications (LFA), which emphasize function over content.  Typical categories include utilities, games, collaborative software, and productivity tools (categories far more prevalent in native app stores).  In this species, the concept of a “page” is eliminated entirely and URLs are used, not as locations of resources, but as bookmarks for state.  Local-first apps (LFA) differ from single-page apps (SPA) in a few fundamental areas:
 
 |  | Single-page apps (SPA) | Local-first apps (LFA) |
 |---:|---|---|
@@ -221,13 +221,13 @@ Local-first applications (LFA) emphasize function over content.  Typical categor
 
 ### Core Benefits
 
-- **Language Choice**<br />
+- 🙊 **Language Choice**<br />
   Web4 ends JavaScript’s monopoly on building dynamic user interfaces on the web.
-- **Multiplayer Reactivity**<br />
+- 👯‍♀️ **Multiplayer Reactivity**<br />
   When application state lives on the server, multiple connected clients can react to the same state change.
-- **Offline Reactivity**<br />
+- 🙈 **Offline Reactivity**<br />
   Bidirectional protocols enable local-first synchronizations and apps continue to function even without a network connection.
-- **Zero-Cost Dependencies**<br />
+- 🪶 **Zero-Cost Dependencies**<br />
   When applications execute remotely, binaries can grow to gigabytes in size without impacting user experience because they are never transferred to the browser.
 
 Get Involved
