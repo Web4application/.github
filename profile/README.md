@@ -15,7 +15,7 @@ Repos
 -----
 
 > [!IMPORTANT]
-> ⚠️ The Web4 Foundation is an ecosystem of ecosystems.  As such it offers SDKs in a multitude of languages each in their own separate GitHub repository.  Some repos, like [XTML](https://github.com/web4foundation/xtml), contain zero implementation code and instead serve as a common area for cross-language discussions, issues, specifications, benchmarks amd documentation. 
+> ⚠️ The Web4 Foundation is an ecosystem of ecosystems.  As such it offers SDKs in a multitude of languages each in their own separate GitHub repository.  Some repos, like [XTML](https://github.com/web4foundation/xtml), contain zero implementation code and instead serve as a common area for cross-language discussions, issues, specifications, benchmarks and documentation. 
 
 <a href="https://github.com/web4foundation/xtml">
     <picture>
