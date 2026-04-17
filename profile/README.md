@@ -171,7 +171,7 @@ Repos
             <a href="https://github.com/web4foundation/keyholes">
                 <picture>
                     <source srcset="https://brand.web4.dev/keyholes/logo/dark.svg" media="(prefers-color-scheme: dark)">
-                    <img src="https://brand.web4.dev/keyholes/logo/light.svg" style="width: 150px">
+                    <img src="https://brand.web4.dev/keyholes/logo/light.svg" style="width: 350px">
                 </picture>
             </a>
         </td>
@@ -184,12 +184,22 @@ Repos
             <a href="https://github.com/web4foundation/html-bench">
                 <picture>
                     <source srcset="https://brand.web4.dev/html-bench/logo/dark.svg" media="(prefers-color-scheme: dark)">
-                    <img src="https://brand.web4.dev/html-bench/logo/light.svg" style="width: 150px">
+                    <img src="https://brand.web4.dev/html-bench/logo/light.svg" style="width: 350px">
                 </picture>
             </a>
         </td>
         <td>
             A neutral testing ground for languages to compare their approaches for server-side rendering and reconciliation
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://github.com/web4foundation/brand">
+                <img src="https://brand.web4.dev/web4/blueprint.svg" style="width: 350px">
+            </a>
+        </td>
+        <td>
+            This repo holds the Web4 Foundation’s brand assets, brand guidelines, and other collateral for anyone to use when representing the foundation.
         </td>
     </tr>
 </table>
